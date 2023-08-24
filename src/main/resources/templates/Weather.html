@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Info</title>
+</head>
+<body>
+        <h1>Weather info is Moscow, ebaniy v'rot</h1>
+
+        <p>Tempa is the streat <span th:text="${weatherData.getMain().getTemp()}"></span></p>
+        <p>Tempa feels like <span th:text="${weatherData.getMain().getFeelsLike()}"></span></p>
+        <p>Max tempa is the streat <span th:text="${weatherData.getMain().getTempMax()}"></span></p>
+        <p>Min tempa is the streat <span th:text="${weatherData.getMain().getTempMin()}"></span></p>
+        <p>Vlajnost is the streat <span th:text="${weatherData.getMain().getHumidity()}"></span></p>
+</body>
+</html>
